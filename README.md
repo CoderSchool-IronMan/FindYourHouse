@@ -1,6 +1,6 @@
-# Project 4 - *Name of App Here*
+# Final Project - FindYourHouse
 
-**Name of your app** is an android app that allows a user to view home and mentions timelines, view user profiles with user timelines, as well as compose and post a new tweet. The app utilizes [Twitter REST API](https://dev.twitter.com/rest/public).
+**FindYourHouse** is an android app that allows a user view the aparment projects on a map with rating and comments from other users.
 
 Time spent: **X** hours spent in total
 
@@ -8,38 +8,21 @@ Time spent: **X** hours spent in total
 
 The following **required** functionality is completed:
 
-* [ ] The app includes **all required user stories** from Week 3 Twitter Client
-* [ ] User can **switch between Timeline and Mention views using tabs**
-  * [ ] User can view their home timeline tweets.
-  * [ ] User can view the recent mentions of their username.
-* [ ] User can navigate to **view their own profile**
-  * [ ] User can see picture, tagline, # of followers, # of following, and tweets on their profile.
-* [ ] User can **click on the profile image** in any tweet to see **another user's** profile.
- * [ ] User can see picture, tagline, # of followers, # of following, and tweets of clicked user.
- * [ ] Profile view includes that user's timeline
-* [ ] User can [infinitely paginate](http://guides.codepath.com/android/Endless-Scrolling-with-AdapterViews-and-RecyclerView) any of these timelines (home, mentions, user) by scrolling to the bottom
+* [ ] User can sign in by Facebook or Google+ account or create new account
+* [ ] User can view location marked on map with total like and total dislike
+* [ ] User can click on one location to see the detail
+ * [ ] In the detail view, display images of the location and comments from users
+ * [ ] Comments from users are separeated into 2 categories: like and dislike with or without comment
+ * [ ] User can save to favorite or share the location in the detail view
+* [ ] User can create new location by clicking on the map or select current location
+* [ ] User can upload pictures of the location and short description
+* [ ] User can search location by district or location near me
 
 The following **optional** features are implemented:
-
-* [ ] User can view following / followers list through the profile
-* [ ] Implements robust error handling, [check if internet is available](http://guides.codepath.com/android/Sending-and-Managing-Network-Requests#checking-for-network-connectivity), handle error cases, network failures
-* [ ] When a network request is sent, user sees an [indeterminate progress indicator](http://guides.codepath.com/android/Handling-ProgressBars#progress-within-actionbar)
-* [ ] User can **"reply" to any tweet on their home timeline**
-  * [ ] The user that wrote the original tweet is automatically "@" replied in compose
-* [ ] User can click on a tweet to be **taken to a "detail view"** of that tweet
- * [ ] User can take favorite (and unfavorite) or retweet actions on a tweet
-* [ ] Improve the user interface and theme the app to feel twitter branded
-* [ ] User can **search for tweets matching a particular query** and see results
+TBD
 
 The following **bonus** features are implemented:
-
-* [ ] Use Parcelable instead of Serializable using the popular [Parceler library](http://guides.codepath.com/android/Using-Parceler).
-* [ ] Apply the popular [Butterknife annotation library](http://guides.codepath.com/android/Reducing-View-Boilerplate-with-Butterknife) to reduce view boilerplate.
-* [ ] User can view their direct messages (or send new ones)
-
-The following **additional** features are implemented:
-
-* [ ] List anything else that you can get done to improve the app functionality!
+TBD
 
 ## Video Walkthrough 
 
