@@ -24,6 +24,9 @@ TBD
 The following **bonus** features are implemented:
 TBD
 
+### Wireframe
+<img src='https://lh3.googleusercontent.com/-m40nJ58N3ho/Vv0o3x9LQyI/AAAAAAAABSs/BYLZDbzEl6cpTqXtmh8DBmBr14O4yrrRACCo/s512-Ic42/Capture.PNG' />
+
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
