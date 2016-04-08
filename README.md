@@ -25,7 +25,7 @@ The following **bonus** features are implemented:
 TBD
 
 ### Wireframe
-<a href='https://app.moqups.com/coder_ironman/YNY0uv3JmJ/view' />
+<a href='https://app.moqups.com/coder_ironman/YNY0uv3JmJ/view'>Link to moqups</a>
 
 ## Video Walkthrough 
 
