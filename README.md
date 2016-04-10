@@ -1,6 +1,6 @@
-# Final Project - FindYourHouse
+# Final Project - Homer
 
-**FindYourHouse** is an android app that allows a user view the aparment projects on a map with rating and comments from other users.
+**Homer** is an android app that allows a user view the aparment projects on a map with rating and comments from other users.
 
 Time spent: **X** hours spent in total
 
