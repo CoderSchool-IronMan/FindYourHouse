@@ -58,8 +58,13 @@ public class HomeListRecyclerViewFragment extends Fragment {
         i1.setTitle("hinh 1");
         i1.setUrl("https://pbs.twimg.com/profile_images/638751551457103872/KN-NzuRl.png");
 
+        Homer_Image i2 = new Homer_Image();
+        i2.setTitle("hinh 1");
+        i2.setUrl("https://pbs.twimg.com/profile_images/638751551457103872/KN-NzuRl.png");
+
         ArrayList<Homer_Image> g = new ArrayList<>();
         g.add(i1);
+        g.add(i2);
 
         Homer_Estate h1 = new Homer_Estate();
         h1.setPrice("2.2b");
