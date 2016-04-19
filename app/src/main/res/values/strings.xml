@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Homer</string>
+    <string name="price">$ 2.1 billion</string>
+    <string name="location">123 Nguyen Tri Phuong, F11, Q1, HCMC</string>
+    <string name="reviews">18 reviews</string>
 </resources>
