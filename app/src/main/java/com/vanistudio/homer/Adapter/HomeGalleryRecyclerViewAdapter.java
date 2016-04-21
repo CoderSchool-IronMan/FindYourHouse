@@ -47,7 +47,7 @@ public class HomeGalleryRecyclerViewAdapter extends RecyclerView.Adapter<HomeGal
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(HomeGalleryRecyclerViewAdapter.ViewHolder holder, int position) {
         Homer_Image image = mImages.get(position);
         ImageView ivHomeGallery = holder.ivHomeGallery;
         Picasso.with(mContext).load(image.getUrl()).fit().centerCrop().into(ivHomeGallery);

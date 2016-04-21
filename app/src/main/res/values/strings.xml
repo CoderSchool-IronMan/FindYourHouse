@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Homer</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="new_home_step_1_title">Step 1/4</string>
+    <string name="new_home_step_1_question">What type of space do you want to post?</string>
+    <string name="new_home_step_2_title">Step 2/4</string>
+    <string name="new_home_step_2_question">What is your space\'s location?</string>
+    <string name="new_home_step_2_map_search_caption">Search on map</string>
+    <string name="new_home_step_2_or">or</string>
+    <string name="new_home_step_2_form_fill_caption">Fill in form</string>
+    <string name="new_home_step_2_address_number">Address number</string>
+    <string name="new_home_step_2_address_street">Street</string>
+    <string name="new_home_step_2_address_ward">Ward</string>
+    <string name="new_home_step_2_address_district">District</string>
+    <string name="new_home_step_2_address_city">City</string>
+    <string name="new_home_button_next">Next</string>
 </resources>
