@@ -20,7 +20,8 @@
         android:layout_height="250dp"
         android:hint="Write your comment"
         android:id="@+id/etComment"
-        android:layout_margin="20dp"/>
+        android:layout_margin="20dp"
+        android:gravity="top"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

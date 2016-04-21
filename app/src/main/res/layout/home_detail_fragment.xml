@@ -12,30 +12,35 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_money"
+            android:id="@+id/imageView3"
+            android:layout_below="@+id/rb_detail"
+            android:layout_toLeftOf="@+id/tv_detail_price"
+            android:layout_toStartOf="@+id/tv_detail_price" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/price"
             android:id="@+id/tv_detail_price"
-            android:textSize="30sp"
-            android:layout_alignBottom="@+id/rb_detail"
-            android:layout_alignLeft="@+id/img_detail_location"
-            android:layout_alignStart="@+id/img_detail_location" />
+            android:layout_above="@+id/img_detail_location"
+            android:layout_toRightOf="@+id/img_detail_location"
+            android:layout_toEndOf="@+id/img_detail_location" />
         <RatingBar
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/rb_detail"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_toRightOf="@+id/tv_detail_price"
-            android:layout_toEndOf="@+id/tv_detail_price"
             android:theme="@style/RatingBar"
             android:numStars="4"
             android:stepSize="1"
-            />
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/tv_detail_views"
+            android:layout_alignEnd="@+id/tv_detail_views" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -52,19 +57,18 @@
             android:layout_height="20dp"
             android:id="@+id/img_detail_location"
             android:layout_below="@+id/tv_detail_views"
-            android:background="@drawable/pin"
             android:layout_margin="5dp"
+            android:src="@drawable/ic_action_place"
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/location"
-            android:layout_alignTop="@+id/img_detail_location"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/imageView3"
             android:layout_toRightOf="@+id/img_detail_location"
-            android:layout_toEndOf="@+id/img_detail_location"
-            android:layout_margin="5dp"
-            android:id="@+id/textView2" />
+            android:layout_toEndOf="@+id/img_detail_location" />
 
     </RelativeLayout>
     <RelativeLayout
@@ -75,8 +79,11 @@
             android:layout_height="wrap_content"
             android:text="Apartment"
             android:id="@+id/textView"
-            android:layout_margin="5px"
-            android:textSize="30sp"/>
+            android:layout_marginLeft="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -88,38 +95,31 @@
             <ImageView
                 android:layout_width="50px"
                 android:layout_height="50px"
-                android:background="@drawable/vintage"
                 android:id="@+id/imageView"
                 android:layout_below="@+id/textView"
                 android:layout_alignLeft="@+id/textView"
                 android:layout_alignStart="@+id/textView"
                 android:layout_marginLeft="46dp"
-                android:layout_marginStart="46dp" />
+                android:layout_marginStart="46dp"
+                android:src="@drawable/ic_action_sleep" />
         <ImageView
             android:layout_width="50px"
             android:layout_height="50px"
-            android:background="@drawable/home"
-            android:layout_alignTop="@+id/imageView"
-            android:layout_toLeftOf="@+id/textView3"
-            android:layout_toStartOf="@+id/textView3"
-            android:id="@+id/imageView2" />
-        <ImageView
-            android:layout_width="50px"
-            android:layout_height="50px"
-            android:background="@drawable/bath"
+            android:id="@+id/imageView2"
+            android:src="@drawable/ic_action_hot_tub"
             android:layout_below="@+id/textView"
-            android:layout_toRightOf="@+id/textView3"
-            android:layout_toEndOf="@+id/textView3"
-            android:id="@+id/imageView3" />
+            android:layout_alignRight="@+id/textView3"
+            android:layout_alignEnd="@+id/textView3" />
+
         <ImageView
             android:layout_width="50px"
             android:layout_height="50px"
-            android:background="@drawable/food"
+            android:src="@drawable/ic_action_explore"
             android:layout_marginRight="58dp"
             android:layout_marginEnd="58dp"
-            android:layout_alignTop="@+id/imageView3"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textView" />
 
 
     </RelativeLayout>

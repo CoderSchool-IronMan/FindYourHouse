@@ -8,46 +8,49 @@
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:background="@drawable/arrows"
+            android:clickable="true"
+            android:onClick="onBackPressed"
+            android:src="@drawable/ic_action_back"
             android:layout_margin="10dp"
             android:id="@+id/imgCommentBack" />
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:background="@drawable/symbol"
             android:layout_alignTop="@+id/imgCommentBack"
             android:layout_toRightOf="@+id/imgCommentBack"
             android:layout_toEndOf="@+id/imgCommentBack"
             android:layout_marginLeft="88dp"
             android:layout_marginStart="88dp"
-            android:id="@+id/imgComment" />
+            android:id="@+id/imgComment"
+            android:src="@drawable/ic_action_comment" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Rate and comment"
-            android:layout_below="@+id/imgCommentBack"
+            android:layout_marginLeft="47dp"
+            android:layout_marginStart="47dp"
+            android:layout_below="@+id/imgComment"
             android:layout_toRightOf="@+id/imgCommentBack"
             android:layout_toEndOf="@+id/imgCommentBack"
-            android:layout_marginLeft="43dp"
-            android:layout_marginStart="43dp" />
+            android:id="@+id/textView4" />
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:background="@drawable/report"
-            android:layout_marginRight="49dp"
-            android:layout_marginEnd="49dp"
+            android:src="@drawable/ic_action_report"
             android:id="@+id/iv_report"
-            android:layout_alignTop="@+id/imgComment"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_marginLeft="63dp"
+            android:layout_marginStart="63dp"
+            android:layout_alignBottom="@+id/imgCommentBack"
+            android:layout_toRightOf="@+id/textView4"
+            android:layout_toEndOf="@+id/textView4" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Report"
-            android:layout_below="@+id/imgCommentBack"
+            android:id="@+id/tv_report"
+            android:layout_alignTop="@+id/textView4"
             android:layout_alignLeft="@+id/iv_report"
-            android:layout_alignStart="@+id/iv_report"
-            android:id="@+id/tv_report" />
+            android:layout_alignStart="@+id/iv_report" />
 
     </RelativeLayout>
     <View
@@ -65,22 +68,30 @@
             android:layout_height="wrap_content"
             android:text="18 reviews"
             android:textSize="20sp"
-            android:id="@+id/tv_comment_review"/>
+            android:id="@+id/tv_comment_review"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <RatingBar
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ratingBar"
             android:layout_gravity="center_horizontal"
-            android:layout_below="@+id/tv_comment_review"
-            android:layout_centerHorizontal="true"
-            android:theme="@style/RatingBar"/>
+            android:theme="@style/RatingBar"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tv_comment_review"
+            android:layout_toEndOf="@+id/tv_comment_review"
+            android:layout_marginLeft="73dp"
+            android:layout_marginStart="73dp" />
     </RelativeLayout>
 
-    <ListView
+    <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/listView"/>
+        android:id="@+id/rv_comment">
+
+    </android.support.v7.widget.RecyclerView>
 
 
 </LinearLayout>
