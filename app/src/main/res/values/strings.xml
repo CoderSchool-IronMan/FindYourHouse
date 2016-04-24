@@ -2,9 +2,9 @@
     <string name="app_name">Homer</string>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
-    <string name="new_home_step_1_title">Step 1/4</string>
+    <string name="new_home_step_1_title">Step 1</string>
     <string name="new_home_step_1_question">What type of space do you want to post?</string>
-    <string name="new_home_step_2_title">Step 2/4</string>
+    <string name="new_home_step_2_title">Step 2</string>
     <string name="new_home_step_2_question">What is your space\'s location?</string>
     <string name="new_home_step_2_map_search_caption">Search on map</string>
     <string name="new_home_step_2_or">or</string>
@@ -14,5 +14,26 @@
     <string name="new_home_step_2_address_ward">Ward</string>
     <string name="new_home_step_2_address_district">District</string>
     <string name="new_home_step_2_address_city">City</string>
+    <string name="new_home_step_3_title">Step 3</string>
+    <string name="new_home_step_3_question">What is your space layout?</string>
+    <string name="new_home_step_3_direction">Fengsui direction</string>
+    <string name="new_home_step_3_direction_north">North</string>
+    <string name="new_home_step_3_direction_south">South</string>
+    <string name="new_home_step_3_direction_east">East</string>
+    <string name="new_home_step_3_direction_west">West</string>
+    <string name="new_home_step_3_bedroom">Bedroom</string>
+    <string name="new_home_step_3_bathroom">Bathroom</string>
+    <string name="new_home_step_3_area">Area</string>
+    <string name="new_home_step_3_unit">m2</string>
+    <string name="new_home_step_4_title">Step 4</string>
+    <string name="new_home_step_4_question">How much is your price?</string>
+    <string-array name="new_home_step_4_price">
+        <item>million</item>
+        <item>billion</item>
+    </string-array>
+    <string name="new_home_step_5_title">Step 5</string>
+    <string name="new_home_step_5_question">Add some photos of your place here</string>
+    <string name="new_home_step_5_camera">From camera</string>
+    <string name="new_home_step_5_gallery">From gallery</string>
     <string name="new_home_button_next">Next</string>
 </resources>

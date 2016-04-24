@@ -10,6 +10,7 @@ public class Homer_Estate {
     private float size;
     private int bedroom;
     private int bathroom;
+    private String direction;
     private String id;
     private String description;
     private Homer_Address adrress;
@@ -122,5 +123,13 @@ public class Homer_Estate {
 
     public void setReports(ArrayList<Homer_Report> reports) {
         this.reports = reports;
+    }
+
+    public String getDirection() {
+        return direction;
+    }
+
+    public void setDirection(String direction) {
+        this.direction = direction;
     }
 }

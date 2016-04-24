@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_home_step_3_title"
+        android:id="@+id/tvStep3Title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_home_step_3_question"
+        android:id="@+id/tvStep3Question"
+        android:layout_below="@+id/tvStep3Title"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_home_step_3_area"
+        android:id="@+id/tvStep3Area"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/tvStep3Question"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/etStep3Area"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/tvStep3Area"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_home_step_3_unit"
+        android:id="@+id/tvStep3AreaUnit"
+        android:layout_gravity="center_horizontal"
+        android:layout_toRightOf="@+id/etStep3Area"
+        android:layout_below="@+id/tvStep3Area"
+        android:layout_alignBaseline="@+id/etStep3Area"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_home_step_3_bedroom"
+        android:id="@+id/tvStep3Bedroom"
+        android:layout_below="@+id/etStep3Area"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvStep3Bedroom"
+        android:id="@+id/llStep3Bedroom">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:id="@+id/btStep3BedroomDecremental"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:id="@+id/tvStep3BedroomQuantity" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/btStep3BedroomIncremental"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_home_step_3_bathroom"
+        android:id="@+id/tvStep3Bathroom"
+        android:layout_below="@+id/llStep3Bedroom"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llStep3Bathroom"
+        android:layout_below="@+id/tvStep3Bathroom">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:id="@+id/btStep3BathroomDecremental"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:id="@+id/tvStep3BathroomQuantity" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/btBathroomIncremental"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_home_step_3_direction"
+        android:id="@+id/tvStep3Direction"
+        android:layout_below="@+id/llStep3Bathroom"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvStep3Direction"
+        android:id="@+id/linearLayout">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_home_step_3_direction_south"
+            android:id="@+id/cbStep3North" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_home_step_3_direction_north"
+            android:id="@+id/cbStep3South" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_home_step_3_direction_east"
+            android:id="@+id/cbStep3East" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_home_step_3_direction_west"
+            android:id="@+id/cbStep3West" />
+    </LinearLayout>
+
+    <Button
+        android:layout_below="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_home_button_next"
+        android:id="@+id/btStep3Next"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

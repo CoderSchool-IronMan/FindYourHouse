@@ -3,7 +3,6 @@ package com.vanistudio.homer.Fragment;
 import android.app.Activity;
 import android.support.v4.app.Fragment;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -14,22 +13,17 @@ import android.widget.Button;
 import com.vanistudio.homer.R;
 
 /**
- * Created by thuynh6 on 4/19/2016.
+ * Created by thuynh6 on 4/21/2016.
  */
-public class NewHomeStep2Fragment extends Fragment {
-    private Button btStep2Next;
-    private Button btStep2MapView;
-    private OnButtonMapViewClickListener mapListener ;
+public class NewHomeStep3Fragment extends Fragment {
+    private Button btStep3Next;
     private OnButtonNextClickListener nextListener;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_new_home_step_2, container, false);
-
-        btStep2Next = (Button) view.findViewById(R.id.btStep2Next);
-        btStep2MapView = (Button) view.findViewById(R.id.btStep2MapView);
-
+        View view = inflater.inflate(R.layout.fragment_new_home_step_3, container, false);
+        btStep3Next = (Button) view.findViewById(R.id.btStep3Next);
         return view;
     }
 
@@ -39,7 +33,6 @@ public class NewHomeStep2Fragment extends Fragment {
         try {
             Activity activity = (Activity) context;
             nextListener = (OnButtonNextClickListener) activity;
-            mapListener = (OnButtonMapViewClickListener) activity;
         }
         catch (ClassCastException e){
 
@@ -51,7 +44,6 @@ public class NewHomeStep2Fragment extends Fragment {
         super.onAttach(context);
         try {
             nextListener = (OnButtonNextClickListener) context;
-            mapListener = (OnButtonMapViewClickListener) context;
         }
         catch (ClassCastException e){
 
@@ -61,27 +53,16 @@ public class NewHomeStep2Fragment extends Fragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        btStep2MapView.setOnClickListener(new View.OnClickListener() {
+
+        btStep3Next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mapListener.OpenMapViewFragment();
+                nextListener.OnSetHomeSpec();
             }
         });
-
-        btStep2Next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                nextListener.OnSetAddressFromForm();
-            }
-        });
-    }
-
-    public interface OnButtonMapViewClickListener {
-        public void OpenMapViewFragment();
     }
 
     public interface OnButtonNextClickListener {
-        public void OnSetAddressFromForm();
+        public void OnSetHomeSpec();
     }
 }
-
