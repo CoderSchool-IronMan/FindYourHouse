@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rvHomeGallery_HomeListRecyclerViewRow"></android.support.v7.widget.RecyclerView>
+    <!--ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/ivHomeGallery_HomeListRecyclerViewRow"/-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvHomePrice_HomeListRecyclerViewRow"
+        android:textColor="#ffffff"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="#F4511E"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_alignBottom="@+id/rvHomeGallery_HomeListRecyclerViewRow"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btFavourite_HomeListRecyclerViewRow"
+        android:src="@drawable/ic_favourite"
+        android:background="@android:color/transparent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvHomeAdress_HomeListRecyclerViewRow"
+        android:layout_below="@+id/rvHomeGallery_HomeListRecyclerViewRow"
+        android:text="New Text New Text New Text New TextNew TextNew Text New Text New Text"
+        android:gravity="right"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:minLines="1"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHomeAdress_HomeListRecyclerViewRow"
+        android:layout_alignParentRight="false"
+        android:gravity="right"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="15dp">
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
+            android:id="@+id/ratingBar"
+            android:layout_below="@id/tvHomeAdress_HomeListRecyclerViewRow"
+            android:rating="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvHomeReview_HomeListRecyclerViewRow"
+            android:text="New Text"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
